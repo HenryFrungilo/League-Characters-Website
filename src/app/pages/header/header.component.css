@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Beaufort;
+    src: url(../mainpage/shared/fonts/BeaufortforLOL-Medium.ttf);
+}
+
+ul {
+    color: #e6e6e6;
+    justify-content: flex-end;
+    display: flex;
+    list-style-type: none;
+    font-family: Beaufort;
+}
+li {
+    margin-right: 1%;
+    margin-top: 0.5%;
+    font-size: 20pt;
+}   
+
+div {
+    min-height: 7vh;
+    min-width: 100vw;
+    background-image: linear-gradient(to bottom, #000000, #1d1f2400);
+    display: fixed;
+}
+
+a{
+    text-decoration: none;
+    color: #e6e6e6;
+}

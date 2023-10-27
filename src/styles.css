@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Beaufort-for-LOL-italic;
+    src: url(./assets/fonts/BeaufortforLOL-HeavyItalic.ttf);
+}
+
+@font-face {
+    font-family: BeaufortMedium;
+    src: url(./assets/fonts/BeaufortforLOL-MediumItalic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#videoBackground {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 400ms ease-in-out;
+    /* filter: blur(2px); */
+}
+
+app-header {
+    display: fixed;
+    opacity: 0;
+}
+
+.page-title, .title-complement, ul {
+    font-family: Beaufort-for-LOL-italic;
+
+}
+.lore {
+    font-family: BeaufortMedium;
+}
+
+#nomeArma{
+    font-family: Beaufort-for-LOL-italic;
+}
+
+#nomeArmaSelecionada {
+    font-family: Beaufort-for-LOL-italic;
+}
