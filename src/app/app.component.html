@@ -1,6 +1,7 @@
 <app-header></app-header>
 <router-outlet></router-outlet>
 <!-- <img src="../assets/vid/animatedSplashArt.gif" id="videoBackground"> -->
-<video autoplay muted loop id="videoBackground">
+<video [muted]="'muted'" [autoplay]="'autoplay'" loop id="videoBackground">
     <source src="assets/vid/animatedSplashArt.mp4" type="video/mp4">
 </video>
+<audio id="backgroundAudio" src="assets/aud/Aphelios_Champion_Theme.mp3" [autoplay]="'autoplay'" [volume]="0.05" [loop]="'loop'"></audio>
