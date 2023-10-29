@@ -10,9 +10,6 @@ export class MainpageComponent {
   imagemArma: string = '';
   corArma: string = '';
   animateImage: boolean = false;
-  delay(ms: number) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }
 
   mouseCalibrum() {
     var mudarNome = document.getElementById("nomeArma")!;
@@ -50,12 +47,14 @@ export class MainpageComponent {
     document.getElementById("nomeArma")!.style.filter = 'drop-shadow(0 0 0.75rem #cf0079be)'
   }
   saidaDoMouse() {
-      document.getElementById("nomeArma")!.style.opacity = '0';
+    document.getElementById("nomeArma")!.style.opacity = '0';
 
   }
 
   calibrumSelect() {
     if (this.imagemArma != 'Calibrum') {
+      var audioArma = new Audio('assets/aud/Calibrum.ogg');
+      audioArma.play();
       this.corArma = '#07ccc9fd'
       document.getElementById("imagemArma")!.style.opacity = "0";
       document.getElementById("nomeArmaSelecionada")!.style.opacity = "0";
@@ -72,6 +71,9 @@ export class MainpageComponent {
 
   severumSelect() {
     if (this.imagemArma != 'Severum') {
+      var audioArma = new Audio('assets/aud/Severum.ogg');
+      audioArma.volume = 0.2
+      audioArma.play();
       this.corArma = '#cf0079'
       document.getElementById("imagemArma")!.style.opacity = "0";
       document.getElementById("nomeArmaSelecionada")!.style.opacity = "0";
@@ -88,6 +90,8 @@ export class MainpageComponent {
 
   gravitumSelect() {
     if (this.imagemArma != 'Gravitum') {
+      var audioArma = new Audio('assets/aud/Gravitum.ogg');
+      audioArma.play();
       this.corArma = '#C331ED'
       document.getElementById("imagemArma")!.style.opacity = "0";
       document.getElementById("nomeArmaSelecionada")!.style.opacity = "0";
@@ -104,6 +108,8 @@ export class MainpageComponent {
 
   infernumSelect() {
     if (this.imagemArma != 'Infernum') {
+      var audioArma = new Audio('assets/aud/Infernum.ogg');
+      audioArma.play();
       this.corArma = '#3098F6'
       document.getElementById("imagemArma")!.style.opacity = "0"
       document.getElementById("nomeArmaSelecionada")!.style.opacity = "0";
@@ -120,6 +126,8 @@ export class MainpageComponent {
 
   crescendumSelect() {
     if (this.imagemArma != 'Crescendum') {
+      var audioArma = new Audio('assets/aud/Crescendum.ogg');
+      audioArma.play();
       this.corArma = '#e6e6e6'
       document.getElementById("imagemArma")!.style.opacity = "0";
       document.getElementById("nomeArmaSelecionada")!.style.opacity = "0";
