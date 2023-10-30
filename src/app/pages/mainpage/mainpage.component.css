@@ -166,13 +166,13 @@ img {
 }
 
 #imagemArma {
-    transition: all 700ms ease-in-out;
+    transition: all 500ms ease-in-out;
     height: 20vw;
     width: 20vw;
 }
 
 #nomeArmaSelecionada {
-    transition: all 700ms ease-in-out;
+    transition: all 500ms ease-in-out;
     text-align: center;
     text-transform: uppercase;
     color: transparent;
