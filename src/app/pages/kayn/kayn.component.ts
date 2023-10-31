@@ -98,6 +98,8 @@ export class KaynComponent {
       }, 300)
       document.getElementById('darkinDiv')!.style.width = '0%'
       document.getElementById('darkinDiv')!.style.height = '0%'
+      document.getElementById('shadowDiv')!.style.width = '0%'
+      document.getElementById('shadowDiv')!.style.height = '0%'
     }
   }
 
