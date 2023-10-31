@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainpageComponent } from './pages/mainpage/mainpage.component';
 import { HeaderComponent } from './pages/header/header.component';
+import { KaynComponent } from './pages/kayn/kayn.component';
 
 
 
@@ -12,7 +13,8 @@ import { HeaderComponent } from './pages/header/header.component';
   declarations: [
     AppComponent,
     MainpageComponent,
-    HeaderComponent
+    HeaderComponent,
+    KaynComponent
   ],
   imports: [
     BrowserModule,

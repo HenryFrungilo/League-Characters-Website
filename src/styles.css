@@ -14,26 +14,16 @@
     padding: 0;
 }
 
-#videoBackground {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: all 400ms ease-in-out;
-    /* filter: blur(2px); */
+::-webkit-scrollbar {
+  width: 1%;
 }
 
 app-header {
-    display: fixed;
+    position: fixed;
     opacity: 0;
 }
 
-.page-title, .title-complement, ul {
+.page-title, .title-complement, ul, .titleShadow, .titleDarkin, button, p {
     font-family: Beaufort-for-LOL-italic;
 
 }
@@ -47,4 +37,8 @@ app-header {
 
 #nomeArmaSelecionada {
     font-family: Beaufort-for-LOL-italic;
+}
+
+body {
+  overflow-x: hidden;
 }

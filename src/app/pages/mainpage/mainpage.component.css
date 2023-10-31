@@ -1,206 +1,216 @@
 @font-face {
-    font-family: Beaufort-for-LOL;
-    src: url(./shared/fonts/BeaufortforLOL-Medium.ttf);
+  font-family: Beaufort-for-LOL;
+  src: url(./shared/fonts/BeaufortforLOL-Medium.ttf);
 }
 
 .page-title,
 .title-complement {
-    text-transform: uppercase;
-    justify-content: center;
-    text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  text-align: center;
 }
 
 .page-title {
-    color: #C28F2C;
-    font-size: 40pt;
+  color: #c28f2c;
+  font-size: 40pt;
 }
 
 .title-complement {
-    color: #fff;
-    font-size: 20pt;
+  color: #fff;
+  font-size: 20pt;
 }
 
 .main-content {
-    min-height: 88vh;
-    background-image: linear-gradient(to bottom, #00000000 70%, #000000);
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #00000000 70%, #000000);
 }
 
 .main-title {
-    margin-top: 5vh;
+  padding-top: 5vh;
 }
 
 .aphelios-lore {
-    text-align: center;
-    font-size: 20pt;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    max-width: 70vw;
-    margin: 5% auto auto auto;
+  text-align: center;
+  font-size: 20pt;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  margin: 5% auto auto auto;
 }
 
 .lore {
-    text-align: justify;
+  text-align: justify;
 }
 
 .centralize {
-    transform: translate(0, 23vh);
+  transform: translate(0, 23vh);
 }
 
 @keyframes severum {
+  25% {
+    filter: drop-shadow(0.2 0.2 1rem #fc00939d);
+  }
 
-    25% {
-        filter: drop-shadow(0.2 0.2 1rem #fc00939d);
-    }
+  50% {
+    filter: drop-shadow(0.2 0.2 1.5rem #fc0091);
+  }
 
-    50% {
-        filter: drop-shadow(0.2 0.2 1.5rem #FC0091);
-    }
-
-    75% {
-        filter: drop-shadow(0.2 0.2 1rem #fc009393);
-    }
+  75% {
+    filter: drop-shadow(0.2 0.2 1rem #fc009393);
+  }
 }
 
 @keyframes calibrum {
+  25% {
+    filter: drop-shadow(0 0 0.5rem #07fefa98);
+  }
 
-    25% {
-        filter: drop-shadow(0 0 0.5rem #07fefa98);
-    }
+  50% {
+    filter: drop-shadow(0 0 0.75rem #07fef8);
+  }
 
-    50% {
-        filter: drop-shadow(0 0 0.75rem #07FEF8);
-    }
-
-    75% {
-        filter: drop-shadow(0 0 0.5rem #07fefa98);
-    }
+  75% {
+    filter: drop-shadow(0 0 0.5rem #07fefa98);
+  }
 }
 
 @keyframes opacityGunOpacityDown {
-    0%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 @keyframes opacityGunOpacityUp {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 button {
-    background: transparent;
-    border: 0px;
+  background: transparent;
+  border: 0px;
 }
 
-
 ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin-top: 2%;
-    pointer-events: fill;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-top: 2%;
+  pointer-events: fill;
 }
 
 ul li {
-    margin-right: 1%;
+  margin-right: 1%;
 }
 
 ul li img {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 img {
-    width: 3vw;
-    height: 3vw;
+  width: 3vw;
+  height: 3vw;
 }
 
 .armas {
-    transition: all 500ms;
-
+  transition: all 500ms;
 }
 
 #calibrum:hover {
-    filter: drop-shadow(0 0 0.5rem #07ccc9fd);
-    transform: translate(0,-5%);
-    animation: 2s ease-in-out infinite calibrum;
+  filter: drop-shadow(0 0 0.5rem #07ccc9fd);
+  transform: translate(0, -5%);
+  animation: 2s ease-in-out infinite calibrum;
 }
 
 #severum:hover {
-    
-    filter: drop-shadow(0 0 1rem #cf0079be);
-    transform: translate(0,-5%);
-    animation: 2s ease-in-out infinite severum;
+  filter: drop-shadow(0 0 1rem #cf0079be);
+  transform: translate(0, -5%);
+  animation: 2s ease-in-out infinite severum;
 }
 
 #gravitum:hover {
-    filter: drop-shadow(0 0 0.75rem #C331ED);
-    transform: translate(0,-5%);
+  filter: drop-shadow(0 0 0.75rem #c331ed);
+  transform: translate(0, -5%);
 }
 
 #infernum:hover {
-    filter: drop-shadow(0 0 0.75rem #3098F6);
-    transform: translate(0,-5%);
+  filter: drop-shadow(0 0 0.75rem #3098f6);
+  transform: translate(0, -5%);
 }
 
 #crescendum:hover {
-    filter: drop-shadow(0 0 0.75rem #e6e6e6);
-    transform: translate(0,-5%);
+  filter: drop-shadow(0 0 0.75rem #e6e6e6);
+  transform: translate(0, -5%);
 }
 
-#nomeArma{
-    transition: all 200ms ease-in-out;  
-    font-size: 30pt;
-    color: #e6e6e6;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 2%;
-    opacity: 0;
+#nomeArma {
+  transition: all 200ms ease-in-out;
+  font-size: 30pt;
+  color: #e6e6e6;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 2%;
+  opacity: 0;
 }
 
 #imagemArma {
-    transition: all 500ms ease-in-out;
-    height: 20vw;
-    width: 20vw;
+  transition: all 500ms ease-in-out;
+  height: 20vw;
+  width: 20vw;
 }
 
 #nomeArmaSelecionada {
-    transition: all 500ms ease-in-out;
-    text-align: center;
-    text-transform: uppercase;
-    color: transparent;
-    text-shadow: -1px -1px 0 #00000054, 1px -1px 0 #00000054, -1px 1px 0 #00000054, 1px 1px 0 #00000054;
-    font-size: 45pt;
+  transition: all 500ms ease-in-out;
+  text-align: center;
+  text-transform: uppercase;
+  color: transparent;
+  text-shadow: -1px -1px 0 #00000054, 1px -1px 0 #00000054, -1px 1px 0 #00000054,
+    1px 1px 0 #00000054;
+  font-size: 45pt;
 }
 
 #gunInfo {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 20%;
-    position: absolute;
-    top: 27%;
-    left: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 20%;
+  position: absolute;
+  top: 27%;
+  left: 10%;
 }
 
 #imagemModelArma {
-    width: auto;
-    height: auto;
+  width: auto;
+  height: auto;
 }
 
 #gunLore {
-    position: absolute;
-    top: 17%;
-    left: 80%;
-    font-size: 23pt;
-    align-items: center;
-    text-align: center;
-    color: #e6e6e6;
+  position: absolute;
+  top: 17%;
+  left: 80%;
+  font-size: 23pt;
+  align-items: center;
+  text-align: center;
+  color: #e6e6e6;
+}
+
+#videoBackground {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: all 400ms ease-in-out;
+  /* filter: blur(2px); */
 }

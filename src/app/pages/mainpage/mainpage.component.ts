@@ -11,6 +11,11 @@ export class MainpageComponent {
   imagemArma: string = '';
   corArma: string = '';
   animateImage: boolean = false;
+  audioCalibrum: string[] = [
+    'assets/aud/Calibrum_Alcance.ogg',
+    'assets/aud/Calibrum_LuaCheia.ogg',
+    'assets/aud/Calibrum_Luar.ogg'
+  ]
 
   mouseCalibrum() {
     var mudarNome = document.getElementById("nomeArma")!;
@@ -54,7 +59,8 @@ export class MainpageComponent {
 
   calibrumSelect() {
     if (this.imagemArma != 'Calibrum' || document.getElementById("nomeArmaSelecionada")!.style.opacity == "0") {
-      var audioArma = new Audio('assets/aud/Calibrum.ogg');
+      let randomAudio = Math.floor(Math.random() * this.audioCalibrum.length);
+      var audioArma = new Audio(`${this.audioCalibrum[randomAudio]}`);
       audioArma.volume = 0.3;
       audioArma.play();
       this.corArma = '#07ccc9fd'
