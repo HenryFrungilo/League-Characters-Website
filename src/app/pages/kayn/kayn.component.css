@@ -1,5 +1,6 @@
 * {
-  overflow: -moz-hidden-unscrollable;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 .page-title,
 .title-complement {
@@ -206,4 +207,10 @@
 #mainLore p {
   margin-top: 1%;
   margin-bottom: 1%;
+}
+
+#toTopButton {
+  color: white;
+  background: #181818;
+  border-radius: 50%;
 }

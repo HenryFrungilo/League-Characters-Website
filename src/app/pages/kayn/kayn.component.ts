@@ -120,4 +120,12 @@ export class KaynComponent {
     document.getElementById('shadowContent')!.style.left = '-30%'
     document.getElementById('darkinContent')!.style.right = '-30%'
   }
+
+  scrollToStory() {
+    document.getElementById("secondParagraph")!.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
+  }
 }

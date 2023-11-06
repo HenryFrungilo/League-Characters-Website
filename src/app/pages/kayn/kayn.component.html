@@ -17,7 +17,7 @@
       Será que ele provará seu valor?
     </p>
     <button class="cta">
-      <h1 class="hover-underline-animation">Leia Mais</h1>
+      <h1 class="hover-underline-animation" (click)="scrollToStory()">Leia Mais</h1>
     </button>
     <button class="cta" id="sairButton">
       <h1 class="hover-underline-animation" (click)="exitSelection()">Sair</h1>
@@ -32,7 +32,7 @@
       de sangue dos Mortais de Runeterra.
     </p>
     <button class="cta">
-      <h1 class="hover-underline-animation">Leia Mais</h1>
+      <h1 class="hover-underline-animation" (click)="scrollToStory()">Leia Mais</h1>
     </button>
     <button class="cta" id="sairButton">
       <h1 class="hover-underline-animation" (click)="exitSelection()">Sair</h1>
@@ -70,7 +70,7 @@
       que lhe fora dada, o primeiro dia de batalha de Kayn também prometia ser o
       último.
     </p>
-    <p>
+    <p id="secondParagraph">
       Avançando sobre a província de Bahrl, as forças noxianas aportaram na foz
       do Rio Epool. Kayn e as outras crianças eram uma vanguarda relutante que
       enfrentava grupos desorganizados de nativos que tentavam defender seus
@@ -130,4 +130,5 @@
       das Sombras.
     </p>
   </div>
+  <button id="toTopButton"><i class="fa-solid fa-arrow-up"></i></button>
 </div>
