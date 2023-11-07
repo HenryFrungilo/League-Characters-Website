@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainpageComponent } from './pages/mainpage/mainpage.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { KaynComponent } from './pages/kayn/kayn.component';
+import { IntroductionComponent } from './pages/introduction/introduction.component';
 
 
 
@@ -14,7 +15,8 @@ import { KaynComponent } from './pages/kayn/kayn.component';
     AppComponent,
     MainpageComponent,
     HeaderComponent,
-    KaynComponent
+    KaynComponent,
+    IntroductionComponent
   ],
   imports: [
     BrowserModule,

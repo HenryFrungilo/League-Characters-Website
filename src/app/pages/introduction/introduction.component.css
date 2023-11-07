@@ -1,0 +1,80 @@
+.mainContent {
+  background-color: #1f1f1f;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+  overflow: hidden;
+}
+
+.image-list {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+  margin-left: 1%;
+  margin-right: 1%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 1500ms;
+  box-shadow: 1px 1px 5px #c28f2c;
+}
+.selection-images {
+  transform: skew(350deg);
+  background: red;
+  width: 15vw;
+  height: 110vh;
+  background-color: #ffffffa8;
+  /* transform: rotate(10deg);
+  background-color: #ffffffa8; */
+}
+
+img {
+  transform: skew(10deg);
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  margin-left: -320%;
+  margin-top: 19%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: all 250ms ease-in-out;
+  filter: grayscale(90%);
+}
+
+#zed {
+  margin-top: 19%;
+  margin-left: -400%;
+}
+
+.Champions:hover {
+  filter: grayscale(0%);
+  cursor: pointer;
+  scale: 1.05;
+}
+
+.icons {
+  margin: 0;
+  top: 75%;
+  left: 30%;
+  width: 5vw;
+  height: 5vw;
+  cursor: pointer;
+  filter: grayscale(0);
+}
+
+.icons:hover div:nth-child(1) {
+  filter: grayscale(0%);
+  cursor: pointer;
+  scale: 1.05;
+}
