@@ -76,4 +76,101 @@ export class IntroductionComponent {
       this._router.navigate(['Aphelios']);
     }, 1000)
   }
+  animationZed(){
+    document.getElementById('zed')!.style.transition = '0ms'
+    document.getElementById('zed')!.style.transform = 'rotate(0)'
+    document.getElementById('zedDiv')!.style.transition = '0ms'
+    document.getElementById('zedDiv')!.style.transform = 'rotate(0)'
+    document.getElementById('zedDiv')!.style.marginLeft = '3.5vw'
+    document.getElementById('zedDiv')!.style.marginRight = '0'
+    document.getElementById('zedDiv')!.style.transition = 'all 1000ms'
+    document.getElementById('zedDiv')!.style.width = '110vw'
+    document.getElementById('zed')!.style.filter = 'grayscale(0)'
+    document.getElementById('zed')!.style.marginLeft = '-10%'
+    document.getElementById('zed')!.style.marginTop = '0%'
+    document.getElementById('zed')!.style.top = '4.5%'
+    document.getElementById('zed')!.style.width = '110vw'
+    document.getElementById('camilleDiv')!.style.width = '0vw'
+    document.getElementById('camilleDiv')!.style.opacity = '0'
+    document.getElementById('camilleDiv')!.style.transition = '400ms'
+    document.getElementById('apheliosDiv')!.style.width = '0vw'
+    document.getElementById('apheliosDiv')!.style.transition = '400ms'
+    document.getElementById('apheliosDiv')!.style.opacity = '0'
+    document.getElementById('kaynDiv')!.style.width = '0vw'
+    document.getElementById('kaynDiv')!.style.opacity = '0'
+    document.getElementById('kaynDiv')!.style.transition = '400ms'
+    document.getElementById('leonaDiv')!.style.width = '0vw'
+    document.getElementById('leonaDiv')!.style.opacity = '0'
+    document.getElementById('leonaDiv')!.style.transition = '400ms'
+    document.getElementById('midIcon')!.style.opacity = '0'
+    document.getElementById('zed')!.style.scale = '1'
+    setTimeout(() => {
+      this._router.navigate(['Zed']);
+    }, 1000)
+  }
+  animationCamille(){
+    document.getElementById('camille')!.style.transition = '0ms'
+    document.getElementById('camille')!.style.transform = 'rotate(0)'
+    document.getElementById('camilleDiv')!.style.transition = '0ms'
+    document.getElementById('camilleDiv')!.style.transform = 'rotate(0)'
+    document.getElementById('camilleDiv')!.style.marginLeft = '3.5vw'
+    document.getElementById('camilleDiv')!.style.marginRight = '0'
+    document.getElementById('camilleDiv')!.style.transition = 'all 1000ms'
+    document.getElementById('camilleDiv')!.style.width = '110vw'
+    document.getElementById('camille')!.style.filter = 'grayscale(0)'
+    document.getElementById('camille')!.style.marginLeft = '3%'
+    document.getElementById('camille')!.style.marginTop = '0%'
+    document.getElementById('camille')!.style.top = '4.5%'
+    document.getElementById('camille')!.style.width = '110vw'
+    document.getElementById('apheliosDiv')!.style.width = '0vw'
+    document.getElementById('apheliosDiv')!.style.opacity = '0'
+    document.getElementById('apheliosDiv')!.style.transition = '400ms'
+    document.getElementById('zedDiv')!.style.width = '0vw'
+    document.getElementById('zedDiv')!.style.transition = '400ms'
+    document.getElementById('zedDiv')!.style.opacity = '0'
+    document.getElementById('kaynDiv')!.style.width = '0vw'
+    document.getElementById('kaynDiv')!.style.opacity = '0'
+    document.getElementById('kaynDiv')!.style.transition = '400ms'
+    document.getElementById('leonaDiv')!.style.width = '0vw'
+    document.getElementById('leonaDiv')!.style.opacity = '0'
+    document.getElementById('leonaDiv')!.style.transition = '400ms'
+    document.getElementById('TopLane')!.style.opacity = '0'
+    document.getElementById('camille')!.style.scale = '1'
+    setTimeout(() => {
+      this._router.navigate(['Camille']);
+    }, 1000)
+  }
+  animationLeona(){
+    document.getElementById('leona')!.style.transition = '0ms'
+    document.getElementById('leona')!.style.transform = 'rotate(0)'
+    document.getElementById('leonaDiv')!.style.transition = '0ms'
+    document.getElementById('leonaDiv')!.style.transform = 'rotate(0)'
+    document.getElementById('leonaDiv')!.style.marginLeft = '3.5vw'
+    document.getElementById('leonaDiv')!.style.marginRight = '0'
+    document.getElementById('leonaDiv')!.style.transition = 'all 1000ms'
+    document.getElementById('leonaDiv')!.style.width = '110vw'
+    document.getElementById('leonaDiv')!.style.marginLeft = '-3.5%'
+    document.getElementById('leona')!.style.filter = 'grayscale(0)'
+    document.getElementById('leona')!.style.marginLeft = '-0%'
+    document.getElementById('leona')!.style.marginTop = '0%'
+    document.getElementById('leona')!.style.top = '4.5%'
+    document.getElementById('leona')!.style.width = '110vw'
+    document.getElementById('camilleDiv')!.style.width = '0vw'
+    document.getElementById('camilleDiv')!.style.opacity = '0'
+    document.getElementById('camilleDiv')!.style.transition = '400ms'
+    document.getElementById('zedDiv')!.style.width = '0vw'
+    document.getElementById('zedDiv')!.style.transition = '400ms'
+    document.getElementById('zedDiv')!.style.opacity = '0'
+    document.getElementById('kaynDiv')!.style.width = '0vw'
+    document.getElementById('kaynDiv')!.style.opacity = '0'
+    document.getElementById('kaynDiv')!.style.transition = '400ms'
+    document.getElementById('apheliosDiv')!.style.width = '0vw'
+    document.getElementById('apheliosDiv')!.style.opacity = '0'
+    document.getElementById('apheliosDiv')!.style.transition = '400ms'
+    document.getElementById('SupportIcon')!.style.opacity = '0'
+    document.getElementById('leona')!.style.scale = '1'
+    setTimeout(() => {
+      this._router.navigate(['Leona']);
+    }, 1000)
+  }
 }

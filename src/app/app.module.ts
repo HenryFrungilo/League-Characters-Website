@@ -7,6 +7,9 @@ import { MainpageComponent } from './pages/mainpage/mainpage.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { KaynComponent } from './pages/kayn/kayn.component';
 import { IntroductionComponent } from './pages/introduction/introduction.component';
+import { ZedComponent } from './pages/zed/zed.component';
+import { CamilleComponent } from './pages/camille/camille.component';
+import { LeonaComponent } from './pages/leona/leona.component';
 
 
 
@@ -16,7 +19,10 @@ import { IntroductionComponent } from './pages/introduction/introduction.compone
     MainpageComponent,
     HeaderComponent,
     KaynComponent,
-    IntroductionComponent
+    IntroductionComponent,
+    ZedComponent,
+    CamilleComponent,
+    LeonaComponent
   ],
   imports: [
     BrowserModule,
