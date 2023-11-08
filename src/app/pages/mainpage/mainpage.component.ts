@@ -12,9 +12,10 @@ export class MainpageComponent {
   corArma: string = '';
   animateImage: boolean = false;
   audioCalibrum: string[] = [
-    'assets/aud/Calibrum_Alcance.ogg',
-    'assets/aud/Calibrum_LuaCheia.ogg',
-    'assets/aud/Calibrum_Luar.ogg'
+    // 'assets/aud/Calibrum_Alcance.ogg',
+    // 'assets/aud/Calibrum_LuaCheia.ogg',
+    // 'assets/aud/Calibrum_Luar.ogg',
+    'assets/aud/Calibrum.ogg'
   ]
 
   mouseCalibrum() {
