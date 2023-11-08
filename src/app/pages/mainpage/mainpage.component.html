@@ -1,34 +1,85 @@
 <video [muted]="'muted'" [autoplay]="'autoplay'" loop id="videoBackground">
-  <source src="assets/vid/animatedSplashArt.mp4" type="video/mp4">
+  <source src="assets/vid/animatedSplashArt.mp4" type="video/mp4" />
 </video>
-<audio id="backgroundAudio" src="assets/aud/Aphelios_Champion_Theme.mp3" [autoplay]="'autoplay'" [volume]="0.025" [loop]="'loop'"></audio>
+<audio
+  id="backgroundAudio"
+  src="assets/aud/Aphelios_Champion_Theme.mp3"
+  [autoplay]="'autoplay'"
+  [volume]="0.025"
+  [loop]="'loop'"
+></audio>
 <div class="main-content">
-    <div class="centralize">
-        <h1 class="page-title main-title">
-            Aphelios
-        </h1>
-        <h2 class="title-complement">A arma dos devotos</h2>
-        <ul class="lista-armas">
-            <li class="armas" id="calibrum"><button (mouseenter)="mouseCalibrum()" (mouseleave)="saidaDoMouse()"
-                    (click)="calibrumSelect()"><img src="assets/img/Calibrum.png"></button></li>
-            <li class="armas" id="severum"><button (mouseenter)="mouseSeverum()" (mouseleave)="saidaDoMouse()"
-                    (click)="severumSelect()"><img src="assets/img/Severum.png"></button></li>
-            <li class="armas" id="gravitum"><button (mouseenter)="mouseGravitum()" (mouseleave)="saidaDoMouse()"
-                    (click)="gravitumSelect()"><img src="assets/img/Gravitum.png"></button></li>
-            <li class="armas" id="infernum"><button (mouseenter)="mouseInfernum()" (mouseleave)="saidaDoMouse()"
-                    (click)="infernumSelect()"><img src="assets/img/Infernum.png"></button></li>
-            <li class="armas" id="crescendum"><button (mouseenter)="mouseCrescendum()" (mouseleave)="saidaDoMouse()"
-                    (click)="crescendumSelect()"><img src="assets/img/Crescendum.png"></button></li>
-        </ul>
-        <h2 id="nomeArma"></h2>
-    </div>
-    <div id="gunInfo">
-        <h1 id="nomeArmaSelecionada">{{imagemArma}}</h1>
-        <img id="imagemArma" (mouseenter)="shadowBoxArma()" (mouseleave)="shadowBoxArmaLeave()"
-            src="assets/img/{{imagemArma}}_Card.png" style="opacity: 0;">
-    </div>
-    <div id="gunLore">
-        <p>
-        </p>
-    </div>
+  <div class="centralize">
+    <h1 class="page-title main-title">Aphelios</h1>
+    <h2 class="title-complement">A arma dos devotos</h2>
+    <h3 class="title-complement" id="regionInfo">
+      <img id="regionIcon" src="assets/img/targonIcon.png" /><a
+        href="https://universe.leagueoflegends.com/pt_BR/region/mount-targon"
+        target="_blank"
+        id="regionText"
+        >Targon</a
+      >
+    </h3>
+    <ul class="lista-armas">
+      <li class="armas" id="calibrum">
+        <button
+          (mouseenter)="mouseCalibrum()"
+          (mouseleave)="saidaDoMouse()"
+          (click)="calibrumSelect()"
+        >
+          <img src="assets/img/Calibrum.png" />
+        </button>
+      </li>
+      <li class="armas" id="severum">
+        <button
+          (mouseenter)="mouseSeverum()"
+          (mouseleave)="saidaDoMouse()"
+          (click)="severumSelect()"
+        >
+          <img src="assets/img/Severum.png" />
+        </button>
+      </li>
+      <li class="armas" id="gravitum">
+        <button
+          (mouseenter)="mouseGravitum()"
+          (mouseleave)="saidaDoMouse()"
+          (click)="gravitumSelect()"
+        >
+          <img src="assets/img/Gravitum.png" />
+        </button>
+      </li>
+      <li class="armas" id="infernum">
+        <button
+          (mouseenter)="mouseInfernum()"
+          (mouseleave)="saidaDoMouse()"
+          (click)="infernumSelect()"
+        >
+          <img src="assets/img/Infernum.png" />
+        </button>
+      </li>
+      <li class="armas" id="crescendum">
+        <button
+          (mouseenter)="mouseCrescendum()"
+          (mouseleave)="saidaDoMouse()"
+          (click)="crescendumSelect()"
+        >
+          <img src="assets/img/Crescendum.png" />
+        </button>
+      </li>
+    </ul>
+    <h2 id="nomeArma"></h2>
+  </div>
+  <div id="gunInfo">
+    <h1 id="nomeArmaSelecionada">{{ imagemArma }}</h1>
+    <img
+      id="imagemArma"
+      (mouseenter)="shadowBoxArma()"
+      (mouseleave)="shadowBoxArmaLeave()"
+      src="assets/img/{{ imagemArma }}_Card.png"
+      style="opacity: 0"
+    />
+  </div>
+  <div id="gunLore">
+    <p></p>
+  </div>
 </div>
