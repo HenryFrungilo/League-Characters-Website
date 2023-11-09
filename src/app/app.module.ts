@@ -10,7 +10,11 @@ import { IntroductionComponent } from './pages/introduction/introduction.compone
 import { ZedComponent } from './pages/zed/zed.component';
 import { CamilleComponent } from './pages/camille/camille.component';
 import { LeonaComponent } from './pages/leona/leona.component';
+import { StatisticsComponent } from './pages/statistics/statistics.component';
+import { StatisticsModule } from './pages/statistics/statistics.module';
 
+import { ButtonModule } from 'primeng/button';
+import { TableModule } from 'primeng/table';
 
 
 @NgModule({
@@ -22,11 +26,14 @@ import { LeonaComponent } from './pages/leona/leona.component';
     IntroductionComponent,
     ZedComponent,
     CamilleComponent,
-    LeonaComponent
+    LeonaComponent,
+    StatisticsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StatisticsModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/md-dark-indigo/theme.css";
+@import "primeng/resources/primeng.css";
+
 @font-face {
     font-family: Beaufort-for-LOL-italic;
     src: url(./assets/fonts/BeaufortforLOL-HeavyItalic.ttf);
