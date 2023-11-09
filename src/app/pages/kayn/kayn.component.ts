@@ -52,13 +52,17 @@ export class KaynComponent {
     this.formaSelecionada = true;
     if (this.formaSelecionada = true) {
       setTimeout(() => {
-        document.getElementById('championName')!.animate(newspaperSpinning, 300);
+        document.getElementById('championName')!.animate(newspaperSpinning, 400);
         document.getElementById('championName')!.style.opacity = '0';
-      }, 600);
+      }, 700);
       setTimeout(() => {
-        document.getElementById('championTitle')!.animate(newspaperSpinning, 300);
+        document.getElementById('championTitle')!.animate(newspaperSpinning, 400);
         document.getElementById('championTitle')!.style.opacity = '0';
-      }, 300)
+      }, 400)
+      setTimeout(() => {
+        document.getElementById('regionInfo')!.animate(newspaperSpinning, 300)
+        document.getElementById('regionInfo')!.style.opacity = '0';
+      },100)
       document.getElementById('videoBackground')!.style.width = '160vw';
       document.getElementById('videoBackground')!.style.height = '160vh';
       setTimeout(() => {
@@ -82,13 +86,17 @@ export class KaynComponent {
     this.formaSelecionada = true;
     if (this.formaSelecionada = true) {
       setTimeout(() => {
-        document.getElementById('championName')!.animate(newspaperSpinning, 300);
+        document.getElementById('championName')!.animate(newspaperSpinning, 400);
         document.getElementById('championName')!.style.opacity = '0';
-      }, 600);
+      }, 700);
       setTimeout(() => {
-        document.getElementById('championTitle')!.animate(newspaperSpinning, 300);
+        document.getElementById('championTitle')!.animate(newspaperSpinning, 400);
         document.getElementById('championTitle')!.style.opacity = '0';
-      }, 300)
+      }, 400)
+      setTimeout(() => {
+        document.getElementById('regionInfo')!.animate(newspaperSpinning, 300)
+        document.getElementById('regionInfo')!.style.opacity = '0';
+      },100)
       document.getElementById('videoBackground')!.style.width = '160vw';
       document.getElementById('videoBackground')!.style.height = '160vh';
       document.getElementById('videoBackground')!.style.marginLeft = '-60%';
@@ -117,6 +125,7 @@ export class KaynComponent {
     document.getElementById('videoBackground')!.style.marginRight = '0';
     document.getElementById('championName')!.style.opacity = '1';
     document.getElementById('championTitle')!.style.opacity = '1';
+    document.getElementById('regionInfo')!.style.opacity = '1';
     document.getElementById('shadowContent')!.style.left = '-30%'
     document.getElementById('darkinContent')!.style.right = '-30%'
   }

@@ -18,10 +18,30 @@
 }
 
 .page-title,
-.title-complement {
+.title-complement,
+#regionText {
   text-transform: uppercase;
   justify-content: center;
   text-align: center;
+}
+
+#regionText {
+  color: #c28f2c;
+  justify-content: center;
+  font-size: 24pt;
+  text-decoration: none;
+}
+
+#regionInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#regionIcon {
+  width: 3vw;
+  height: 3vw;
+  margin-right: 0.5vw;
 }
 
 .page-title {
