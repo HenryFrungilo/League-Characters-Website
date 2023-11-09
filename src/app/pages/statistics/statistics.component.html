@@ -1,4 +1,4 @@
-<img src="assets/img/Background.jpg" id="imagemBackground">
+<img src="assets/img/Background.jpg" id="imagemBackground" />
 <div class="mainContent">
   <h1 class="title">Estastísticas dos Personagens dentro do Jogo</h1>
   <div class="tableContent">
@@ -29,10 +29,22 @@
       </ng-template>
       <ng-template pTemplate="summary">
         <div class="footer-table">
-          {{ champion ? champion.length : 0 }} Personagens
-          Registrados.
+          {{ champion ? champion.length : 0 }} Personagens Registrados.
         </div>
       </ng-template>
     </p-table>
+  </div>
+  <div class="form">
+    <h2>Registre um novo campeão</h2>
+    <p-cascadeSelect
+    [(ngModel)]="regiaoSelecionada"
+    [options]="regioes"
+    optionLabel="nomeCampeao"
+    optionGroupLabel="nome"
+    [optionGroupChildren]="['campeoes']"
+    [style]="{ minWidth: '14rem' }"
+    placeholder="Selecione a região do campeão"
+    class="cascadeForm"
+  ></p-cascadeSelect>
   </div>
 </div>

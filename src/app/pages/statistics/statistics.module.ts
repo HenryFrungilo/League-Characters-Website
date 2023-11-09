@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TableModule } from 'primeng/table';
+import { CascadeSelectModule } from 'primeng/cascadeselect';
 
 
 
@@ -9,6 +10,7 @@ import { TableModule } from 'primeng/table';
   imports: [
     CommonModule,
     TableModule,
+    CascadeSelectModule
   ]
 })
 export class StatisticsModule { }

@@ -1,3 +1,4 @@
+import { CascadeSelectModule } from 'primeng/cascadeselect';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -15,6 +16,8 @@ import { StatisticsModule } from './pages/statistics/statistics.module';
 
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -33,7 +36,10 @@ import { TableModule } from 'primeng/table';
     BrowserModule,
     AppRoutingModule,
     StatisticsModule,
-    TableModule
+    TableModule,
+    CascadeSelectModule,
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
