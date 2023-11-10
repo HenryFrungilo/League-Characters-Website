@@ -1,7 +1,7 @@
 .mainContent {
   position: absolute;
   min-height: 100%;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.295), black);
+  background-image: linear-gradient(to top, #111111, black);
   min-height: 100%;
   min-width: 100%;
 }
@@ -50,4 +50,23 @@ td {
 
 .cascadeForm {
   margin-top: 3%;
+}
+
+.inputs {
+  margin-left: 1%;
+  padding: 0.1%;
+}
+.tituloForm {
+  margin: 0.5%;
+  color: white;
+}
+
+#button2 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 75%;
+  left: 47%;
 }

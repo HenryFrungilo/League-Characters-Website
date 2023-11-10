@@ -1,20 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
-@import "primeng/resources/themes/md-dark-indigo/theme.css";
-@import "primeng/resources/primeng.css";
-
 @font-face {
-    font-family: Beaufort-for-LOL-italic;
-    src: url(./assets/fonts/BeaufortforLOL-HeavyItalic.ttf);
+  font-family: Beaufort-for-LOL-italic;
+  src: url(./assets/fonts/BeaufortforLOL-HeavyItalic.ttf);
 }
 
 @font-face {
-    font-family: BeaufortMedium;
-    src: url(./assets/fonts/BeaufortforLOL-MediumItalic.ttf);
+  font-family: BeaufortMedium;
+  src: url(./assets/fonts/BeaufortforLOL-MediumItalic.ttf);
 }
 
-* {
-    margin: 0;
-    padding: 0;
+router-outlet {
+  padding: 0;
+  margin: 0;
 }
 
 ::-webkit-scrollbar {
@@ -22,24 +18,29 @@
 }
 
 app-header {
-    position: fixed;
-    opacity: 0;
+  position: fixed;
+  opacity: 0;
 }
 
-.page-title, .title-complement, ul, .titleShadow, .titleDarkin, button, p {
-    font-family: Beaufort-for-LOL-italic;
-
+.page-title,
+.title-complement,
+ul,
+.titleShadow,
+.titleDarkin,
+button,
+p {
+  font-family: Beaufort-for-LOL-italic;
 }
 .lore {
-    font-family: BeaufortMedium;
+  font-family: BeaufortMedium;
 }
 
-#nomeArma{
-    font-family: Beaufort-for-LOL-italic;
+#nomeArma {
+  font-family: Beaufort-for-LOL-italic;
 }
 
 #nomeArmaSelecionada {
-    font-family: Beaufort-for-LOL-italic;
+  font-family: Beaufort-for-LOL-italic;
 }
 
 body {

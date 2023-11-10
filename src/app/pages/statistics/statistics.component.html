@@ -1,4 +1,3 @@
-<img src="assets/img/Background.jpg" id="imagemBackground" />
 <div class="mainContent">
   <h1 class="title">Estastísticas dos Personagens dentro do Jogo</h1>
   <div class="tableContent">
@@ -35,16 +34,43 @@
     </p-table>
   </div>
   <div class="form">
-    <h2>Registre um novo campeão</h2>
+    <h2 class="tituloForm">Registre um novo campeão</h2>
     <p-cascadeSelect
-    [(ngModel)]="regiaoSelecionada"
-    [options]="regioes"
-    optionLabel="nomeCampeao"
-    optionGroupLabel="nome"
-    [optionGroupChildren]="['campeoes']"
-    [style]="{ minWidth: '14rem' }"
-    placeholder="Selecione a região do campeão"
-    class="cascadeForm"
-  ></p-cascadeSelect>
+      [(ngModel)]="regiaoSelecionada"
+      [options]="regioes"
+      optionLabel="nomeCampeao"
+      optionGroupLabel="nome"
+      [optionGroupChildren]="['campeoes']"
+      [style]="{ minWidth: '14rem' }"
+      placeholder="Selecione a região do campeão"
+      class="cascadeForm inputs"
+    ></p-cascadeSelect>
+    <p-dropdown
+      [options]="opcoesRoles"
+      [(ngModel)]="roleSelecionada"
+      optionLabel="role"
+      placeholder="Selecione uma role"
+      class="inputs"
+    ></p-dropdown>
+    <p-inputNumber
+      mask="00.0"
+      placeholder="Win Rate do Personagem"
+      [(ngModel)]="numeroWinrate"
+      class="inputs"
+      prefix="%"
+    />
+    <p-inputNumber
+      placeholder="Ban Rate do Personagem"
+      [(ngModel)]="numeroBanRate"
+      class="inputs"
+      prefix="%"
+    />
+    <p-inputNumber
+      placeholder="Pick Rate do Personagem"
+      [(ngModel)]="numeroPickRate"
+      class="inputs"
+      prefix="%"
+    />
+    <p-button id="button2" label="Cadastrar" (click)="resetar()"></p-button>
   </div>
 </div>

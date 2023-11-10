@@ -137,4 +137,11 @@ export class KaynComponent {
       inline: "nearest"
     });
   }
+  scrollToTop() {
+    document.getElementById("secondParagraph")!.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
+  }
 }

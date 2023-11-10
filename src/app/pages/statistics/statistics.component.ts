@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Champions } from './model/champions.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-statistics',
@@ -14,7 +15,24 @@ export class StatisticsComponent {
 
   regiaoSelecionada: unknown
 
-  constructor() {
+  roleSelecionada: unknown
+
+  opcoesRoles: unknown[]
+
+  numeroWinrate: unknown
+  numeroBanRate: unknown
+  numeroPickRate: unknown
+
+  constructor(private _router: Router) {
+
+    this.opcoesRoles = [
+      { role: 'Top' },
+      { role: 'Jungle' },
+      { role: 'Mid' },
+      { role: 'ADC' },
+      { role: 'Support' },
+    ]
+
     this.champion = [
       { name: "Camille", winRate: 51.2, pickRate: 4.0, banRate: 2.7, role: "Top Laner" },
       { name: "Kayn", winRate: 50.1, pickRate: 9.2, banRate: 8.4, role: "Jungler" },
@@ -64,5 +82,9 @@ export class StatisticsComponent {
         ]
       },
     ]
+  }
+
+  resetar() {
+    this._router.navigate(['Stats']);
   }
 }

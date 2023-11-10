@@ -1,1 +1,26 @@
-<p>camille works!</p>
+<div class="content">
+  ->
+  <p-card
+    header="Algo não parece certo..."
+    subheader="Página não encontrada"
+    [style]="{ width: '100%' }"
+    class="card"
+  >
+    <p>
+      Desculpe pelo transtorno, essa página não está completa provavelmente por
+      causa da incompetência do desenvolvedor e/ou procrastinação.
+    </p>
+    <ng-template pTemplate="footer"> </ng-template>
+  </p-card>
+  <-
+</div>
+<p-button
+  id="button"
+  label="Voltar"
+  (click)="voltarPaginaPrincipal()"
+></p-button>
+<p-button
+  id="button2"
+  label="Ver Estastísticas"
+  (click)="verStats()"
+></p-button>
